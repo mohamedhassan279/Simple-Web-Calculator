@@ -1,0 +1,75 @@
+<div class="container">
+  <div id="calculator">
+    <div class="screen">
+      <div id="history">
+        {{history}}
+      </div>
+      <div id="main">
+        {{main}}
+      </div>
+    </div>
+    <section class="bottom-part">
+      <div class="features">
+        <div class="sub-menu">
+          <div class="row">
+            <button id="percentage" class="button image sign" data-value="%" (click)="unary('percent')">%</button>
+            <button id="clear-entry" class="button sign" data-value="CE" (click)="clearEntry()">CE</button>
+            <button id="clear" class="button sign" data-value="C" (click)="clear()">C</button>
+            <button id="backspace" class="button image sign" data-value="BS" (click)="backspace()" (window:keydown.backspace) = "backspace()">
+              ⌫
+            </button>
+          </div>
+        </div>
+        <div class="main-menu">
+          <div class="row">
+            <button id="fraction" class="button sign" data-value="1/x" (click)="unary('frac')">
+              <span>
+                <sup>1</sup>
+              </span>
+              <span>&frasl;</span>
+              <span class="x-sign">
+                <sub><em>x</em></sub>
+              </span>
+            </button>
+            <button id="sqr" class="button sign" data-value="sqr" (click)="unary('sqr')">
+              <span class="x-sign">
+                <sub>x</sub>
+              </span>
+              <span>
+                <sup>2</sup>
+              </span>
+            </button>
+            <button id="sqrt" class="button image sign" data-value="sqrt" (click)="unary('sqrt')">
+              √x
+            </button>
+            <button id="divide" class="button image sign" data-value="/" (click)="pressOp('divide')">&divide;</button>
+          </div>
+          <div class="row">
+            <button class="button number" data-value="7" (click)="pressNum('7')" (window:keydown.7) = "pressNum('7')">7</button>
+            <button class="button number" data-value="8" (click)="pressNum('8')" (window:keydown.8) = "pressNum('8')">8</button>
+            <button class="button number" data-value="9" (click)="pressNum('9')" (window:keydown.9) = "pressNum('9')">9</button>
+            <button id="multiply" class="button image sign" data-value="*" (click)="pressOp('x')" (window:keydown.*) = "pressOp('x')">&times;</button>
+          </div>
+          <div class="row">
+            <button class="button number" data-value="4" (click)="pressNum('4')" (window:keydown.4) = "pressNum('4')">4</button>
+            <button class="button number" data-value="5" (click)="pressNum('5')" (window:keydown.5) = "pressNum('5')">5</button>
+            <button class="button number" data-value="6" (click)="pressNum('6')" (window:keydown.6) = "pressNum('6')">6</button>
+            <button id="minus" class="button image sign" data-value="-" (click)="pressOp('-')" (window:keydown.-) = "pressOp('-')">&minus;</button>
+          </div>
+          <div class="row">
+            <button class="button number" data-value="1" (click)="pressNum('1')" (window:keydown.1) = "pressNum('1')">1</button>
+            <button class="button number" data-value="2" (click)="pressNum('2')" (window:keydown.2) = "pressNum('2')">2</button>
+            <button class="button number" data-value="3" (click)="pressNum('3')" (window:keydown.3) = "pressNum('3')">3</button>
+            <button id="plus" class="button image sign" data-value="+" (click)="pressOp('+')" (window:keydown.+) = "pressOp('+')">+</button>
+          </div>
+          <div class="row">
+            <button id="plus-minus" class="button number sign" data-value="+-" (click)="unary('neg')">+/-</button>
+            <button class="button number" data-value="0" (click)="pressNum('0')" (window:keydown.0) = "pressNum('0')">0</button>
+            <button id="dot" class="button dot sign" data-value="." (click)="pressNum('.')" (window:keydown.dot) = "pressNum('.')">.</button>
+            <button id="equal" class="button image equals sign" data-value="=" (click)="pressEq()" (window:keydown.enter) = "pressEq()">=</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
