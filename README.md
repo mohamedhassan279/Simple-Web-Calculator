@@ -16,7 +16,12 @@ This is a simple web calculator using angular framework and springboot
 - Then write “ng serve --open” in the terminal to open the project, on port “http://localhost:4200/”-. Note: if you needed to change port 4200 as it was already in use then you will need to change it in the paintBackend folder in the controller class.
 - Then you can use the paint application and draw whatever you want.
 ---
-![image](https://drive.google.com/file/d/1s0MT_hUYjBk3LhMSl1HtLutr0lAwtpQ5/view?usp=share_link)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/96317608/217378988-039c1a32-b068-469e-8e9a-67c4ee167802.png">
+</p>
+
+---
 ## How to use the app:
 Please watch this video https://drive.google.com/file/d/1Vat1J9xfdH6lEao0tm5o1RF7aBPA7yHL/view?usp=share_link
 
