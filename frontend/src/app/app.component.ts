@@ -10,8 +10,8 @@ import { CalculatorService } from './calculator.service';
 
 export class AppComponent {
   title = 'calculator';
-  curisBin = false;
-  history = ""
+  curisBin: boolean = false;
+  history: string = "";
   main: string = "0"
   firstbin: string = "0"
   secondbin: string = "0"
@@ -21,14 +21,14 @@ export class AppComponent {
   unaryop: string = "";
   unaryop1: string = ""
   unaryop2: string = ""
-  multipleClick = false;
-  isOpClicked = false;
-  isUnaryClicked = false;
-  isDotClicked = false;
-  isEqClicked = false;
-  isfirst = true;
-  errorflag = false;
-  succssive = false;
+  multipleClick: boolean = false;
+  isOpClicked: boolean = false;
+  isUnaryClicked: boolean = false;
+  isDotClicked: boolean = false;
+  isEqClicked: boolean = false;
+  isfirst: boolean = true;
+  errorflag: boolean = false;
+  succssive: boolean = false;
 
   constructor(private myservice: CalculatorService) { }
 
