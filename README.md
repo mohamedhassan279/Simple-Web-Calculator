@@ -23,6 +23,5 @@ This is a simple web calculator using angular framework and springboot
 
 ---
 ## How to use the app:
-Please watch this video https://drive.google.com/file/d/1Vat1J9xfdH6lEao0tm5o1RF7aBPA7yHL/view?usp=share_link
 
-
+https://user-images.githubusercontent.com/96317608/221182936-8f316901-2b9e-42b9-b56f-e95ef4884a09.mp4
